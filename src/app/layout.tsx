@@ -28,9 +28,7 @@ export default function RootLayout({
         <div className="grid min-h-screen grid-rows-[auto_1fr_auto] gap-16 font-[family-name:var(--font-geist-sans)]">
           <Navbar />
           <main className="row-start-2 flex grow flex-col items-center gap-8 sm:items-start">
-            <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-              {children}
-            </div>
+            <div className="w-full px-4 py-6 sm:px-6 lg:px-8">{children}</div>
           </main>
           <Footer />
         </div>

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Home = () => {
   return (
     <div className="flex flex-col items-center gap-8 sm:items-start">
@@ -22,6 +24,12 @@ const Home = () => {
       </section>
 
       <h2>Hecho por abogados para abogados</h2>
+      <Link
+        className="rounded bg-gray-800 px-4 py-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+        href="/recasting-of-sentences"
+      >
+        Ir al cálculo de refundicón de penas
+      </Link>
     </div>
   )
 }
